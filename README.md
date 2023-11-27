@@ -15,11 +15,11 @@ Sample website used for all actions
 https://the-internet.herokuapp.com/ 
 
 
-Basic setup of the project
+**Basic setup of the project**
 **************************
-1. Create empty folder in your desktop
-2. Open the folder in VSCODE
-3. create package.json file using following command
+* Create empty folder in your desktop
+* Open the folder in VSCODE
+* create package.json file using following command
     npm init
     fill below details as per the requirement
    
@@ -33,21 +33,27 @@ Basic setup of the project
     author: 
     license: (ISC)
 
-4. If you wish to install pretteir please do so by using following command
-    npm install prettier
+* If you wish to install pretteir please do so by using following command
+    _npm install prettier_
 
-5. Install playwright
-    npx playwright install 
+* Install playwright
+    _npx playwright install_
 
-6. Install playwright test
-    npm install @playwright/test
+* Install playwright test
+    _npm install @playwright/test_
 
-7. Install cucumber
-    npm i @cucumber/cucumber
+* Install cucumber
+    _npm i @cucumber/cucumber_
 
-8. Install type nodes
-    npm install --save @types/node
+* Install type nodes
+    _npm install --save @types/node_
 
-9. Install ts node
-    npm install ts-node
+* Install ts node
+    _npm install ts-node_
 
+
+
+
+**To Execute test use below command in Terminal**
+*********************************************
+_npm test_
