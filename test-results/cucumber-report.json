@@ -1,0 +1,55 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-with-username-and-password;login-with-correct-user-name-and-password",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login with correct user name and password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 402762500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch test application",
+            "match": {
+              "location": "steps\\homepage.steps.ts:6"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 19296099,
+              "error_message": "RangeError: Maximum call stack size exceeded\n    at HomePage.launchApp (C:\\Users\\mchandramoh3\\OneDrive - DXC Production\\Desktop\\mchandramoh3\\Github-Main\\Playwright_Sample_BDD_BS\\page-objects\\homepage.ts:19:20)\n    at HomePage.launchApp (C:\\Users\\mchandramoh3\\OneDrive - DXC Production\\Desktop\\mchandramoh3\\Github-Main\\Playwright_Sample_BDD_BS\\page-objects\\homepage.ts:20:20)\n    at HomePage.launchApp (C:\\Users\\mchandramoh3\\OneDrive - DXC Production\\Desktop\\mchandramoh3\\Github-Main\\Playwright_Sample_BDD_BS\\page-objects\\homepage.ts:20:20)\n    at HomePage.launchApp (C:\\Users\\mchandramoh3\\OneDrive - DXC Production\\Desktop\\mchandramoh3\\Github-Main\\Playwright_Sample_BDD_BS\\page-objects\\homepage.ts:20:20)\n    at HomePage.launchApp (C:\\Users\\mchandramoh3\\OneDrive - DXC Production\\Desktop\\mchandramoh3\\Github-Main\\Playwright_Sample_BDD_BS\\page-objects\\homepage.ts:20:20)\n    at HomePage.launchApp (C:\\Users\\mchandramoh3\\OneDrive - DXC Production\\Desktop\\mchandramoh3\\Github-Main\\Playwright_Sample_BDD_BS\\page-objects\\homepage.ts:20:20)\n    at HomePage.launchApp (C:\\Users\\mchandramoh3\\OneDrive - DXC Production\\Desktop\\mchandramoh3\\Github-Main\\Playwright_Sample_BDD_BS\\page-objects\\homepage.ts:20:20)\n    at HomePage.launchApp (C:\\Users\\mchandramoh3\\OneDrive - DXC Production\\Desktop\\mchandramoh3\\Github-Main\\Playwright_Sample_BDD_BS\\page-objects\\homepage.ts:20:20)\n    at HomePage.launchApp (C:\\Users\\mchandramoh3\\OneDrive - DXC Production\\Desktop\\mchandramoh3\\Github-Main\\Playwright_Sample_BDD_BS\\page-objects\\homepage.ts:20:20)\n    at HomePage.launchApp (C:\\Users\\mchandramoh3\\OneDrive - DXC Production\\Desktop\\mchandramoh3\\Github-Main\\Playwright_Sample_BDD_BS\\page-objects\\homepage.ts:20:20)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 470499,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'close')\n    at World.<anonymous> (C:\\Users\\mchandramoh3\\OneDrive - DXC Production\\Desktop\\mchandramoh3\\Github-Main\\Playwright_Sample_BDD_BS\\setup\\src\\hooks.ts:31:19)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-with-username-and-password",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login with username and password",
+    "tags": [],
+    "uri": "features\\1 Loging with username and password.feature"
+  }
+]

@@ -2,12 +2,16 @@
 //Browser stack intrgration at the bottom
 //local execution
 
-import playwright from '@playwright/test'
+import { Browser, BrowserContext, Page, chromium } from '@playwright/test'
 import { Before, After, BeforeAll } from '@cucumber/cucumber'
+
+let browser: Browser;
+let context: BrowserContext;
+let page: Page
 
 BeforeAll({timeout: 60 * 1000}, async () => {
     console.log(' ----> Running in Local Machine <---- ')
-    global.browser = await playwright['chromium'].launch({ headless: false })
+    browser = await chromium.launch({headless:false})
 })
 
 // AfterAll(async () => {
@@ -17,14 +21,14 @@ BeforeAll({timeout: 60 * 1000}, async () => {
 
 Before(async (scenario) => {
     console.log('---> Executing '+scenario.pickle.name)
-    global.context = await global.browser.newContext()
-    global.page = await global.context.newPage()
+    const context = await browser.newContext()
+    page = await context.newPage()
 })
 
 After(async () => {
     //console.log('Close context and page')
-    await global.page.close()
-    await global.context.close()
+    // await page.close()
+    await context.close()
 })
 
 // AfterAll(async () => {

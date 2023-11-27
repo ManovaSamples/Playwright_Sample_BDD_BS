@@ -41,9 +41,13 @@ Basic setup of the project
 
 6. Install playwright test
     npm install @playwright/test
-    
+
 7. Install cucumber
     npm i @cucumber/cucumber
 
 8. Install type nodes
     npm install --save @types/node
+
+9. Install ts node
+    npm install ts-node
+
