@@ -60,12 +60,15 @@ https://the-internet.herokuapp.com/
     _npm install @playwright/test_
 
 * Install cucumber
+
     _npm i @cucumber/cucumber_
 
 * Install type nodes
+
     _npm install --save @types/node_
 
 * Install ts node
+
     _npm install ts-node_
 
 
